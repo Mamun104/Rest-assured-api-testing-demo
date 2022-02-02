@@ -23,4 +23,32 @@ public class TestRunner {
         customer.searchCustomer();
 
     }
+    @Test
+    public void  generateCustomerInfo() throws IOException, ConfigurationException {
+
+        customer = new Customer();
+        customer.generateCustomer();
+
+    }
+
+
+    @Test
+    public void createCustomerInfo() throws IOException, ConfigurationException {
+        customer = new Customer();
+        customer.createCustomer();
+    }
+
+    @Test
+    public void updateCustomerInfo() throws IOException {
+
+        customer = new Customer();
+        customer.updateCustomer();
+    }
+
+    @Test
+    public void deleteCustomerInfo() throws IOException {
+
+        customer = new Customer();
+        customer.deleteCustomer();
+    }
 }
